@@ -21,6 +21,7 @@ gem 'slim-rails'
 
 gem 'sorcery', '0.14.0'
 gem 'pry-byebug'
+gem 'rails-i18n'
 
 group :development, :test do
   # Debugger

@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    models:
+      user: 'ユーザー'
+      game: '試合'
+    attributes:
+      user:
+        email: 'メールアドレス'
+        password: 'パスワード'
+        password_confirmation: 'パスワード確認'
+        name: '名前'
+      game:
+        tournament_name: '大会名'
+        date: '日付'
+        opponent_name: '対戦相手'
+        opponent_team: 'チーム名'

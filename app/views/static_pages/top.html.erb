@@ -2,14 +2,14 @@
   <div class="top-inner-text">
     <h1>TT-Data</h1>
     <p>~卓球データ分析ツール~</p>
-    <%= link_to "プロ選手の試合データを見る", "#" %>
+    <%= link_to (t '.to_labo_page'), "#" %>
     <br>
 
-    <%= link_to "自分の試合をデータ分析する", new_game_path %>
+    <%= link_to (t '.to_me_page'), new_game_path %>
     <br><br>
-    <%= link_to "新規登録", new_user_path %>
+    <%= link_to (t '.to_register_page'), new_user_path %>
     <br>
-    <%= link_to "ログイン", login_path %>
+    <%= link_to (t '.to_login_page'), login_path %>
 
   </div>
 </div>
