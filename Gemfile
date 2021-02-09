@@ -10,7 +10,7 @@ gem 'puma', '~> 4.1'
 # Assets
 gem 'bootstrap'
 gem 'jquery-rails'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
