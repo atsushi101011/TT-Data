@@ -1,2 +1,14 @@
-h1 Games#index
-p Find me in app/views/games/index.html.slim
+<div class="container pt-3">
+  <!-- 試合一覧 -->
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+      <% if @games.present? %>
+      <%= render @games %>
+    <% else %>
+      <p>試合がありません。</p>
+    <% end %>
+      </div>
+    </div>
+  </div>
+</div>

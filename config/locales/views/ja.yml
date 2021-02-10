@@ -26,3 +26,9 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+  games:
+    new:
+      title: '試合登録'
+    create:
+      success: 'ユーザー登録が完了しました'
+      fail: '試合の登録に失敗しました'

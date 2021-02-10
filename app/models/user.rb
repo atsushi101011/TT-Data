@@ -7,4 +7,7 @@ class User < ApplicationRecord
 
   validates :email, uniqueness: true, presence: true
   validates :name, presence: true, length: { maximum: 255 }
+
+  has_many :user_games, dependent: :destroy
+  #デフォルトでforeign_key: "user_id"が設定されている
 end
