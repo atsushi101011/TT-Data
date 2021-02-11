@@ -18,8 +18,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'slim-rails'
-
+gem 'ransack'
 gem 'sorcery', '0.14.0'
+
 gem 'pry-byebug'
 gem 'rails-i18n'
 
