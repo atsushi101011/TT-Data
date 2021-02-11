@@ -6,7 +6,7 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     if @game.save
-      @relationship = UserGame.create(user_id:current_user.id, game_id:@game.id)
+      @usergame = UserGame.create(user_id:current_user.id, game_id:@game.id)
       redirect_to games_path, success: t('.success')
     else
       flash.now[:danger] = t('.fail')
@@ -15,7 +15,7 @@ class GamesController < ApplicationController
   end
 
   def index
-    @games = Game.all
+    @usergames = UserGame.where(user_id:current_user.id)
   end
 
   private

@@ -32,3 +32,5 @@ ja:
     create:
       success: 'ユーザー登録が完了しました'
       fail: '試合の登録に失敗しました'
+    index:
+      to_me_page: '自分の試合をデータ分析する'
