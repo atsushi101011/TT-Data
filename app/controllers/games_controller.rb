@@ -1,4 +1,8 @@
 class GamesController < ApplicationController
+  def index
+    @usergames = UserGame.where(user_id:current_user.id)
+  end
+
   def new
     @game = Game.new
   end
@@ -14,8 +18,20 @@ class GamesController < ApplicationController
     end
   end
 
-  def index
-    @usergames = UserGame.where(user_id:current_user.id)
+  def edit; end
+
+  def update
+    if @board.update(board_params)
+      redirect_to @board, success: t('.success')
+    else
+      flash.now['danger'] = t('.fail')
+      render :edit
+    end
+  end
+
+  def destroy
+    @board.destroy!
+    redirect_to boards_path, success: t('.success')
   end
 
   private

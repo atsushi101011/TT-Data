@@ -2,18 +2,15 @@
    <div id="game-id-<%= user_game.game.id %>">
      <div class="card">
        <div class="card-body">
-         <h4 class="card-title">
-           <%=link_to user_game.game.tournament_name, "#" %>
-         </h4>
+         <h5 class="card-title">
+         　　<%= link_to "#{current_user.name} VS #{user_game.game.opponent_name}(#{user_game.game.opponent_team})", "#" %>
+         </h5>
          <ul class="list-inline">
            <li class="list-inline-item">
-             <%= current_user.name %> VS <%= user_game.game.opponent_name %>
-           </li>
-           <li class="list-inline-item">
-             (<%= user_game.game.opponent_team %>)
-           </li>
-           <li class="list-inline-item">
              <%= l user_game.game.date %>
+           </li>
+           <li class="list-inline-item">
+           　　<%= user_game.game.tournament_name %>
            </li>
          </ul>
        </div>
