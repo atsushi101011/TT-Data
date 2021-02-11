@@ -13,6 +13,8 @@
            　　<%= user_game.game.tournament_name %>
            </li>
          </ul>
+         <%= link_to "編集", edit_game_path(user_game.game) %>
+         <%= link_to "削除", game_path(user_game.game), method: :delete, data: {confirm: "削除しますか？"} %>
        </div>
      </div>
    </div>

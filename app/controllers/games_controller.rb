@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+  before_action :find_game, only: %i[edit update destroy]
+
   def index
     @usergames = UserGame.where(user_id:current_user.id)
   end
@@ -21,8 +23,8 @@ class GamesController < ApplicationController
   def edit; end
 
   def update
-    if @board.update(board_params)
-      redirect_to @board, success: t('.success')
+    if @game.update(game_params)
+      redirect_to games_path, success: t('.success')
     else
       flash.now['danger'] = t('.fail')
       render :edit
@@ -30,14 +32,18 @@ class GamesController < ApplicationController
   end
 
   def destroy
-    @board.destroy!
-    redirect_to boards_path, success: t('.success')
+    @game.destroy!
+    redirect_to games_path, success: t('.success')
   end
 
   private
 
   def game_params
     params.require(:game).permit(:tournament_name, :date, :opponent_name, :opponent_team)
+  end
+
+  def find_game
+    @game = Game.find(params[:id])
   end
 
 end

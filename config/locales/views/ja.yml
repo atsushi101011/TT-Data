@@ -28,9 +28,17 @@ ja:
       success: 'ログアウトしました'
   games:
     new:
-      title: '試合登録'
+      title: '試合データの登録'
     create:
       success: 'ユーザー登録が完了しました'
       fail: '試合の登録に失敗しました'
     index:
+      title: '試合データ一覧'
       to_me_page: '試合を新規作成する'
+    edit:
+      title: '試合データの編集'
+    update:
+      success: '試合データを更新しました'
+      fail: '試合データを更新できませんでした'
+    destroy:
+      success: '試合データを削除しました'
