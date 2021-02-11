@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   delete 'logout', to: 'user_sessions#destroy'
 
   resources :games
+  resources :scores
+
 end

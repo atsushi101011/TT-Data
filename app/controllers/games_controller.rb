@@ -7,7 +7,7 @@ class GamesController < ApplicationController
     @game = Game.new(game_params)
     if @game.save
       @usergame = UserGame.create(user_id:current_user.id, game_id:@game.id)
-      redirect_to games_path, success: t('.success')
+      redirect_to new_score_path, success: t('.success')
     else
       flash.now[:danger] = t('.fail')
       render :new
