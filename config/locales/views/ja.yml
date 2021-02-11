@@ -23,7 +23,7 @@ ja:
       password_forget: 'パスワードをお忘れの方はこちら'
     create:
       success: 'ログインしました'
-      fail: 'ログインに失敗しました'
+      fail: 'ログインに失敗しました。メールアドレスまたはパスワードが間違っている可能性があります。'
     destroy:
       success: 'ログアウトしました'
   games:

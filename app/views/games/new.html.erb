@@ -3,6 +3,7 @@
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
       <h1>分析する試合</h1>
       <%= form_with model: @game, local: true do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
         <div class="form-group">
           <%= f.label :tournament_name %>
           <%= f.text_field :tournament_name, class: 'form-control' %>
