@@ -33,7 +33,7 @@ ja:
       success: 'ユーザー登録が完了しました'
       fail: '試合の登録に失敗しました'
     index:
-      title: '試合データ一覧'
+      title: 'TT-Data Me'
       to_me_page: '試合を新規作成する'
     edit:
       title: '試合データの編集'
@@ -42,3 +42,6 @@ ja:
       fail: '試合データを更新できませんでした'
     destroy:
       success: '試合データを削除しました'
+  pro_games:
+    index:
+      title: 'TT-Data Labo'
