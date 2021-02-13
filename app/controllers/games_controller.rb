@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   before_action :find_game, only: %i[edit update destroy]
 
   def index
-    @usergames = UserGame.where(user_id:current_user.id)
+    @games = Game.all
   end
 
   def new
@@ -10,9 +10,8 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new(game_params)
+    @game = current_user.games.build(game_params)
     if @game.save
-      @usergame = UserGame.create(user_id:current_user.id, game_id:@game.id)
       redirect_to new_score_path, success: t('.success')
     else
       flash.now[:danger] = t('.fail')
