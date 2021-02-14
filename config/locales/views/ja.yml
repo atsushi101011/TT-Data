@@ -45,3 +45,15 @@ ja:
   pro_games:
     index:
       title: 'TT-Data Labo'
+  pro_users:
+    new:
+      title: 'プロ選手登録'
+    create:
+      success: '選手登録が完了しました'
+      fail: '選手登録に失敗しました'
+  pro_tournaments:
+    new:
+      title: '大会の登録'
+    create:
+      success: '登録が完了しました'
+      fail: '登録に失敗しました'

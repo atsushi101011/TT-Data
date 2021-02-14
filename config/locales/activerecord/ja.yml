@@ -14,3 +14,9 @@ ja:
         date: '日付'
         opponent_name: '対戦相手'
         opponent_team: 'チーム名'
+      pro_user:
+        name: '名前'
+      pro_tournament:
+        name: '大会名'
+        start_on: '開始日'
+        end_on: '終了日'

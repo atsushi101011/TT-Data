@@ -1,6 +1,6 @@
-class CreateTournaments < ActiveRecord::Migration[6.0]
+class CreateProTournaments < ActiveRecord::Migration[6.0]
   def change
-    create_table :tournaments do |t|
+    create_table :pro_tournaments do |t|
       t.string :name
       t.date :start_on
       t.date :end_on
