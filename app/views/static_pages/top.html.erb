@@ -2,8 +2,10 @@
   <div class="top-inner-text">
     <h1>TT-Data</h1>
     <p>~卓球データ分析ツール~</p>
-    <%= link_to (t '.to_labo_page'), labo_path %>
+    <%= link_to ("プロ選手の登録へ"), new_pro_user_path %>
     <br>
+    <%= link_to (t '.to_labo_page'), labo_path %>
+    <br><br>
     <%= link_to (t '.to_me_page'), new_game_path %>
     <br>
     <%= link_to "自分の試合一覧へ", games_path %>

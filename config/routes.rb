@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :games
   resources :scores
+  resources :pro_users
 
   get 'labo', to: 'pro_games#index'
 end
