@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_14_230737) do
+ActiveRecord::Schema.define(version: 2021_02_15_012745) do
 
   create_table "games", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "tournament_name"
@@ -30,6 +30,18 @@ ActiveRecord::Schema.define(version: 2021_02_14_230737) do
     t.integer "pro_user2_id"
     t.integer "pro_team2_id"
     t.integer "tournament_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pro_scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.integer "set", null: false
+    t.integer "point", null: false
+    t.integer "serve_course", null: false
+    t.integer "pro_user1_point_skill"
+    t.integer "pro_user2_point_skill"
+    t.integer "rally_count", null: false
+    t.integer "pro_game_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

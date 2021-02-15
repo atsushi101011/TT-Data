@@ -30,8 +30,8 @@ ja:
     new:
       title: '試合データの登録'
     create:
-      success: 'ユーザー登録が完了しました'
-      fail: '試合の登録に失敗しました'
+      success: '登録が完了しました'
+      fail: '登録に失敗しました'
     index:
       title: 'TT-Data Me'
       to_me_page: '試合を新規作成する'
@@ -47,12 +47,21 @@ ja:
       title: 'TT-Data Labo'
     new:
       title: '試合登録'
+    create:
+      success: '登録が完了しました'
+      fail: '登録に失敗しました'
   pro_users:
     new:
       title: 'プロ選手登録'
     create:
       success: '選手登録が完了しました'
       fail: '選手登録に失敗しました'
+  pro_teams:
+    new:
+      title: 'チームの登録'
+    create:
+      success: '登録が完了しました'
+      fail: '登録に失敗しました'
   pro_tournaments:
     new:
       title: '大会の登録'

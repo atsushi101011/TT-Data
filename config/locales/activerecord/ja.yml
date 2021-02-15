@@ -16,6 +16,8 @@ ja:
         opponent_team: 'チーム名'
       pro_user:
         name: '名前'
+      pro_team:
+        name: 'チーム名'
       pro_tournament:
         name: '大会名'
         start_on: '開始日'
