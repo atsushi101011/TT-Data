@@ -45,6 +45,8 @@ ja:
   pro_games:
     index:
       title: 'TT-Data Labo'
+    new:
+      title: '試合登録'
   pro_users:
     new:
       title: 'プロ選手登録'

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :games
   resources :scores
   resources :pro_users, only: %i[new create destroy]
+  resources :pro_teams, only: %i[new create destroy]
   resources :pro_tournaments, only: %i[new create destroy]
-
-  get 'labo', to: 'pro_games#index'
+  resources :pro_games
 end

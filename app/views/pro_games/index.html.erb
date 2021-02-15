@@ -2,8 +2,13 @@
   <div class="row">
     <div class="col-12">
     <h3><%= t('.title') %></h3>
+    <%= link_to (t '.to_me_page'), new_pro_game_path %>
       <div class="row">
+        <% if @pro_games.present? %>
+          <%= render @pro_games %>
+        <% else %>
           <p>試合がありません。</p>
+        <% end %>
       </div>
     </div>
   </div>

@@ -20,3 +20,10 @@ ja:
         name: '大会名'
         start_on: '開始日'
         end_on: '終了日'
+      pro_game:
+        name: '試合名'
+        pro_user1_id: 'プレイヤー1'
+        pro_user2_id: 'プレイヤー2'
+        pro_team1_id: 'チーム名'
+        pro_team2_id: 'チーム名'
+        tournament_id: '大会名'
