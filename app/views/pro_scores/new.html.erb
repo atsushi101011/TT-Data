@@ -1,2 +1,11 @@
-h1 ProScores#new
-p Find me in app/views/pro_scores/new.html.slim
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h3><%= t('.title') %></h3>
+      <%= form_with model: [@game, @score], local: true do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+      
+      <% end %>
+    </div>
+  </div>
+</div>

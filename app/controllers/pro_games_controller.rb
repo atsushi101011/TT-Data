@@ -11,7 +11,7 @@ class ProGamesController < ApplicationController
   def create
     @game = ProGame.new(game_params)
     if @game.save
-      redirect_to new_pro_score_path, success: t('.success')
+      redirect_to new_pro_game_pro_score_path(@game), success: t('.success')
     else
       flash.now[:danger] = t('.fail')
       render :new

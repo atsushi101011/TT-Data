@@ -68,3 +68,6 @@ ja:
     create:
       success: '登録が完了しました'
       fail: '登録に失敗しました'
+  pro_scores:
+    new:
+      title: 'データ入力'

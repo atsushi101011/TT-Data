@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :pro_users, only: %i[new create destroy]
   resources :pro_teams, only: %i[new create destroy]
   resources :pro_tournaments, only: %i[new create destroy]
-  resources :pro_games
-  resources :pro_scores
+  resources :pro_games do
+    resources :pro_scores, only: %i[new create destroy], shallow: true
+  end
 end
