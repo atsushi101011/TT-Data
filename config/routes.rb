@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   resources :pro_games do
     resources :pro_scores, only: %i[new create destroy], shallow: true
   end
+
+  namespace :api, {format: 'json'} do
+    namespace :v1 do
+      resources :pro_users, only: [:index, :show]
+    end
+  end
 end

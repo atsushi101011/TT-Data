@@ -23,6 +23,7 @@ gem 'sorcery', '0.14.0'
 
 gem 'pry-byebug'
 gem 'rails-i18n'
+gem 'foreman'
 
 group :development, :test do
   # Debugger
