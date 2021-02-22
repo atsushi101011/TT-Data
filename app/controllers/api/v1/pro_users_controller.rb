@@ -7,7 +7,7 @@ class Api::V1::ProUsersController < ApiController
     end
 
     def index
-      pro_users = ProUser.all
+      pro_users = ProUser.select(:id, :name)
       render json: pro_users
     end
 
