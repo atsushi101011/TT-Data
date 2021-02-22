@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-14T04:50:21.578Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="K6ktECnButzwV0O0voZV" version="14.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-22T01:24:36.683Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="F41Ul3humCu_vHqcy9Se" version="14.3.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -167,7 +167,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="G_D8hda77aeov3lel07B-28" value="id&lt;br&gt;name(1回戦)&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255 , 51 , 51)&quot;&gt;team1(仙台ジュニア)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255 , 51 , 51)&quot;&gt;team2(木下マイスター)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left&quot;&gt;pro_user1_id&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left&quot;&gt;pro_user2_id&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left&quot;&gt;tournament_id&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;video&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="G_D8hda77aeov3lel07B-28" value="id&lt;br&gt;name(1回戦)&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-align: left&quot;&gt;pro_user1_id&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255 , 51 , 51)&quot;&gt;pro_team1_id&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left&quot;&gt;pro_user2_id&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255 , 51 , 51)&quot;&gt;pro_team2_id&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left&quot;&gt;tournament_id&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;(video)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="335" y="730" width="140" height="210" as="geometry" />
         </mxCell>
         <mxCell id="G_D8hda77aeov3lel07B-29" value="" style="endArrow=none;html=1;" edge="1" parent="1">
@@ -190,10 +190,7 @@
             <mxPoint x="7.28" y="-16.18" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G_D8hda77aeov3lel07B-35" value="adminで管理&lt;br&gt;name1,2ともに検索かけれるように" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="295" y="945" width="210" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="G_D8hda77aeov3lel07B-36" value="id&lt;br&gt;set&lt;br&gt;point&lt;br&gt;serve_course&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;name1_point_skill&lt;br&gt;name2_point_skill&lt;/font&gt;&lt;br&gt;rally_count&lt;br&gt;&lt;span&gt;&lt;font color=&quot;#ff3333&quot;&gt;pro_game_id&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;shadow=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="G_D8hda77aeov3lel07B-36" value="id&lt;br&gt;set&lt;br&gt;point&lt;br&gt;serve_course&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;pro_user1_point_skill&lt;br&gt;pro_user2_point_skill&lt;/font&gt;&lt;br&gt;rally_count&lt;br&gt;&lt;span&gt;&lt;font color=&quot;#ff3333&quot;&gt;pro_game_id&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;shadow=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="570" y="730" width="210" height="230" as="geometry" />
         </mxCell>
         <mxCell id="G_D8hda77aeov3lel07B-37" value="" style="endArrow=none;html=1;exitX=0.005;exitY=0.109;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.998;entryY=0.11;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
@@ -226,10 +223,10 @@
           <mxGeometry x="92.5" y="630" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="G_D8hda77aeov3lel07B-47" value="&lt;br&gt;id&lt;br&gt;&lt;span style=&quot;text-align: center&quot;&gt;name&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;start_on&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;end_on&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;&lt;br&gt;&lt;/span&gt;created_at&lt;br&gt;&lt;span style=&quot;text-align: center&quot;&gt;updated_at&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;strokeColor=#000000;align=left;" vertex="1" parent="1">
-          <mxGeometry x="50" y="860" width="185" height="120" as="geometry" />
+          <mxGeometry x="50" y="1005" width="185" height="120" as="geometry" />
         </mxCell>
         <mxCell id="G_D8hda77aeov3lel07B-48" value="&lt;div&gt;pro_tournaments&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="87.5" y="860" width="110" height="30" as="geometry" />
+          <mxGeometry x="85" y="1010" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G_D8hda77aeov3lel07B-50" value="" style="endArrow=none;html=1;exitX=-0.011;exitY=0.192;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.973;entryY=0.192;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_D8hda77aeov3lel07B-47" target="G_D8hda77aeov3lel07B-47">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -241,6 +238,47 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint y="400" as="sourcePoint" />
             <mxPoint x="850" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_D8hda77aeov3lel07B-53" value="&lt;br&gt;id&lt;br&gt;name&lt;br&gt;created_at&lt;br&gt;&lt;span style=&quot;text-align: center&quot;&gt;updated_at&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;strokeColor=#000000;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="870" width="185" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="G_D8hda77aeov3lel07B-54" value="" style="endArrow=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_D8hda77aeov3lel07B-53" target="G_D8hda77aeov3lel07B-53">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="930" as="sourcePoint" />
+            <mxPoint x="490" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_D8hda77aeov3lel07B-55" value="pro_teams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="107.5" y="870" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G_D8hda77aeov3lel07B-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;exitX=0.995;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.003;entryY=0.237;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_D8hda77aeov3lel07B-40" target="G_D8hda77aeov3lel07B-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="780" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="234" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_D8hda77aeov3lel07B-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;exitX=0.995;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.003;entryY=0.237;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="233.66" y="910" as="sourcePoint" />
+            <mxPoint x="335.00499999999994" y="911.7699999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="233.58499999999995" y="911.9999999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_D8hda77aeov3lel07B-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;exitX=0.995;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.465;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="G_D8hda77aeov3lel07B-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="1050" as="sourcePoint" />
+            <mxPoint x="370" y="970" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="235" y="1052" />
+              <mxPoint x="400" y="1052" />
+              <mxPoint x="400" y="942" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
