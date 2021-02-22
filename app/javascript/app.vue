@@ -10,7 +10,7 @@ import VueRouter from 'vue-router'
 
 import ProUserIndexPage from 'ProUserIndexPage.vue'
 import ProUserShowPage from 'ProUserShowPage.vue'
-
+import ProUserNewPage from 'ProUserNewPage.vue'
 
 const router = new VueRouter({
    routes: [
@@ -18,7 +18,10 @@ const router = new VueRouter({
       component: ProUserIndexPage  },
     { path: '/pro_users/:id(\\d+)',  // :id は数値のみに制限する
       name: 'ProUserShowPage',
-      component: ProUserShowPage  }
+      component: ProUserShowPage  },
+    { path: '/pro_users/new',
+      name: 'ProUserNewPage',
+      component: ProUserNewPage  }
   ]
 })
 
