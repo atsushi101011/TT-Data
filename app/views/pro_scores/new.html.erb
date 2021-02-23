@@ -1,10 +1,32 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <h3><%= t('.title') %></h3>
+      <h3><%= t('.title') %></h3><br>
+      <h4><%= "#{@game.pro_user1.name}(#{@game.pro_team1.name}) VS #{@game.pro_user2.name}(#{@game.pro_team2.name})" %> </h4>
       <%= form_with model: [@game, @score], local: true do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
+        <div class="form-group">
+          <%= f.label :serve_cource %><br>
+          <%= f.select :serve_course, ProScore.serve_courses.keys.map {|k| [k, k]} %>
+        </div>
+        <div class="form-group">
+          <%= f.label :pro_user1_point_skill %><br>
+          <%= f.select :pro_user1_point_skill, ProScore.pro_user1_point_skills.keys.map {|k| [k, k]} %>
+        </div>
+        <div class="form-group">
+          <%= f.label :pro_user2_point_skill %><br>
+          <%= f.select :pro_user2_point_skill, ProScore.pro_user2_point_skills.keys.map {|k| [k, k]} %>
+        </div>
+        <div class="form-group">
+          <%= f.label :rally_count %><br>
+          <%= f.select :rally_count, ProScore.rally_counts.keys.map {|k| [k, k]} %>
+        </div>
+        <div class='text-center'>
+          <%= f.submit "次のポイントへ", class: 'btn btn-primary' %>
+        </div>
       <% end %>
     </div>
   </div>
 </div>
+<%= javascript_pack_tag 'hello_vue' %>
+<%= stylesheet_pack_tag 'hello_vue' %>

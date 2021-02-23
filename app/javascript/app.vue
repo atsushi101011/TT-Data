@@ -11,6 +11,8 @@ import VueRouter from 'vue-router'
 import ProUserIndexPage from 'ProUserIndexPage.vue'
 import ProUserShowPage from 'ProUserShowPage.vue'
 import ProUserNewPage from 'ProUserNewPage.vue'
+import ProScoreNewPage from 'ProScoreNewPage.vue'
+
 
 const router = new VueRouter({
    routes: [
@@ -21,7 +23,10 @@ const router = new VueRouter({
       component: ProUserShowPage  },
     { path: '/pro_users/new',
       name: 'ProUserNewPage',
-      component: ProUserNewPage  }
+      component: ProUserNewPage  },
+    { path: '/pro_scores/new',
+      name: 'ProScoreNewPage',
+      component: ProScoreNewPage  }
   ]
 })
 
